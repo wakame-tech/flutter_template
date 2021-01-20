@@ -3,18 +3,40 @@ description: A Flutter Template Project
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.9.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.0
 
+  # state
   flutter_riverpod:
   state_notifier:
   flutter_state_notifier:
   freezed_annotation:
   get_it:
+
+  # firebase
+  firebase_core:
+  firebase_analytics:
+
+  # auth
+  firebase_auth:
+  firebase_auth_mocks:
+  google_sign_in:
+  google_sign_in_mocks:
+  apple_sign_in:
+
+  # external
+  cloud_firestore:
+  cloud_firestore_mocks:
+  # cloud_functions:
+  # sentry:
+
+  # monetize
+  # in_app_purchase:
+  # admob_flutter:
 
   # utils
   tuple:
@@ -26,6 +48,9 @@ dependencies:
   shared_preferences:
   flutter_launcher_icons:
   simple_logger:
+  url_launcher:
+  package_info:
+  flutter_inappwebview:
 
 dev_dependencies:
   flutter_test:

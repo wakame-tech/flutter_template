@@ -14,12 +14,13 @@ My flutter template project.
 - [x] Atomic Design?
 
 ### auth
-- [ ] Firebase Authentication
+- [x] Firebase Authentication
     - [ ] Sign in with Apple
     - [ ] Sign in with Google
 
-### db
-- [ ] Firestore
+### external
+- [x] Firebase Analytics
+- [x] Firestore
 
 ## Set up
 TODO...
