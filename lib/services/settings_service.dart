@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/infrastructure/auth/i_settings_repository.dart';
+import 'file:///D:/dev/flutter_template/lib/infrastructure/settings/i_settings_repository.dart';
 
 class SettingsService {
   const SettingsService({@required ISettingsRepository settingsRepository})

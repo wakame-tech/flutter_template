@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/infrastructure/auth/i_settings_repository.dart';
-import 'package:get_it/get_it.dart';
+import 'file:///D:/dev/flutter_template/lib/infrastructure/settings/i_settings_repository.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SettingsRepository implements ISettingsRepository {
