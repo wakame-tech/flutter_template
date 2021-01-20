@@ -6,7 +6,7 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter/material.dart';
-import 'package:flutter_template/presentation/pages/counter/counter_page.dart';
+import 'file:///D:/dev/flutter_template/lib/presentation/pages/counter_page.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

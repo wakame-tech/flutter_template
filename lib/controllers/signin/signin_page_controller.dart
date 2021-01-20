@@ -2,13 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_template/domain/signin/signin_page_state.dart';
 import 'package:flutter_template/services/auth_service.dart';
-import 'package:get_it/get_it.dart';
-
-final signinPageControllerProvider =
-    StateNotifierProvider((ref) => SigninPageController(
-          reader: ref.read,
-          authService: GetIt.I<AuthService>(),
-        ));
 
 class SigninPageController extends StateNotifier<SignInPageState> {
   SigninPageController({@required this.reader, @required this.authService})

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_template/controllers/navigation_controller.dart';
 import 'package:flutter_template/presentation/organisms/sign_in_form.dart';
-import 'package:flutter_template/presentation/pages/signin/signin_page_controller.dart';
+import 'package:flutter_template/providers/providers.dart';
 
 class SigninPage extends ConsumerWidget {
   SigninPage();
@@ -19,7 +20,7 @@ class SigninPage extends ConsumerWidget {
           SignInForm(
             onPressed: () async {
               await context.read(signinPageControllerProvider).submit();
-              await Navigator.of(context).pushReplacementNamed('/counter');
+              await Navigator.of(context).pushReplacementNamed(Routes.Counter);
             },
           )
         ],

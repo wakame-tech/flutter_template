@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_template/presentation/controllers/theme_controller.dart';
-import 'package:flutter_template/presentation/pages/counter/counter_page_controller.dart';
+import 'package:flutter_template/providers/providers.dart';
 
-// TODO: もしかして, Riverpod と Atomic Design 相性悪い説
+// TODO: もしかして, RiverPod と Atomic Design 相性悪い説
 class CounterPage extends ConsumerWidget {
+  static const route = '/counter';
+
   CounterPage();
 
   @override
@@ -33,7 +34,8 @@ class CounterPage extends ConsumerWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          context.read(themeSelectorProvider).change(theme == ThemeMode.dark ? ThemeMode.light : ThemeMode.dark);
+          context.read(themeSelectorProvider).change(
+              theme == ThemeMode.dark ? ThemeMode.light : ThemeMode.dark);
           context.read(counterPageControllerProvider).increment();
         },
         tooltip: 'Increment',
