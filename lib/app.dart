@@ -20,7 +20,7 @@ class App extends ConsumerWidget {
       darkTheme: darkThemeData,
       themeMode: mode,
       routes: Routes.routes,
-      initialRoute: '/counter',
+      initialRoute: '/signin',
       navigatorObservers: [
         FirebaseAnalyticsObserver(analytics: analytics),
       ],

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'file:///D:/dev/flutter_template/lib/infrastructure/settings/i_settings_repository.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'i_settings_repository.dart';
 
 class SettingsRepository implements ISettingsRepository {
   static const themePrefsKey = 'selectedTheme';
